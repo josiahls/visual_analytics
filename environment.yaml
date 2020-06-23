@@ -28,6 +28,8 @@ dependencies:
 #      - easydict
       - matplotlib
       - jupyter_console
+      - wordcloud
+      - matplotlib_venn_wordcloud
 ##      - moviepy
 ##      - pygifsicle
       - jupyterlab

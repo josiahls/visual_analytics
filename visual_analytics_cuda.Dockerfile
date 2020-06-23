@@ -44,7 +44,7 @@ USER $CONTAINER_USER
 RUN conda env create -f environment.yaml
 
 USER root
-COPY --chown=$CONTAINER_USER:$CONTAINER_GROUP Summer1_2020_VisualAnalytics5122 .
+#COPY --chown=$CONTAINER_USER:$CONTAINER_GROUP Summer1_2020_VisualAnalytics5122 .
 COPY --chown=$CONTAINER_USER:$CONTAINER_GROUP entrypoint.sh entrypoint.sh
 #RUN /bin/bash -c "source activate visual_analytics && pip install kaggle"
 RUN ["chmod", "+x", "./entrypoint.sh"]
